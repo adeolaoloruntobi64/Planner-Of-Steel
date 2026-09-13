@@ -8,14 +8,14 @@
 
 body {
   margin: 0;
-  /* Slightly off the content column's own background (set in App.css) so the centered page
-   * reads as a card sitting on the surface, instead of blending edge-to-edge. */
-  background: #f4f5f7;
+  /* A proper gray surface behind the content card (set in App.css), not just an off-white tint,
+   * so the centered page reads as a card sitting on a gray desk rather than blending edge-to-edge. */
+  background: #e7e9eb;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #0d0e12;
+    background: #1c1e21;
   }
 }
 

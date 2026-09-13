@@ -1,27 +1,112 @@
+/* Full-bleed navy banner styled after acorn.utoronto.ca's site header: a dark title band
+ * over a slightly lighter nav row, with the active tab picked out by a translucent white
+ * highlight — same navy on both light and dark themes since it's a fixed brand color, not
+ * page chrome. */
+.acorn-header {
+  --acorn-header-bg: #041e42;
+  --acorn-nav-bg: #0a2f5c;
+  background: var(--acorn-header-bg);
+  color: #ffffff;
+}
+
+.acorn-header-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.acorn-crest {
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.acorn-header-divider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.acorn-header-top h1 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-align: left;
+  margin: 0;
+}
+
+.acorn-header-nav {
+  display: flex;
+  background: var(--acorn-nav-bg);
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.acorn-header-nav button {
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+.acorn-header-nav button:hover:not(.active) {
+  color: #ffffff;
+}
+
+.acorn-header-nav button.active {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .acorn-header-top {
+    padding: 1.1rem 1rem;
+  }
+
+  .acorn-header-nav {
+    padding: 0 0.25rem;
+  }
+
+  .acorn-header-nav button {
+    padding: 0.75rem 1rem;
+  }
+}
+
 .degree-planner-page {
+  /* ACORN-style palette: a solid U of T navy for every button/link/accent, a lighter blue tint
+   * for badges and callouts, and gold (U of T's own secondary color) reserved for work-term
+   * highlighting so it doesn't compete with the navy accent. */
   --dp-bg: #ffffff;
   --dp-panel-bg: #ffffff;
-  --dp-panel-bg-alt: #fbfbfd;
-  --dp-border: #d8dce3;
-  --dp-border-soft: #e4e7ec;
+  --dp-panel-bg-alt: #f4f6f8;
+  --dp-border: #d3d8de;
+  --dp-border-soft: #e2e6ea;
   --dp-text: #1a1f36;
   --dp-text-secondary: #5b6472;
-  --dp-accent: #2946a8;
-  --dp-accent-hover: #203a91;
+  --dp-accent: #0a2f5c;
+  --dp-accent-hover: #072347;
   --dp-accent-contrast: #ffffff;
   --dp-danger: #b42318;
   --dp-danger-bg: #fef3f2;
   --dp-danger-border: #fbc7c3;
   --dp-success: #067647;
-  --dp-purple: #7c3aed;
-  --dp-purple-bg: #f6f4ff;
-  --dp-purple-border: #d9cfff;
+  --dp-accent-soft: #1b76c4;
+  --dp-accent-soft-bg: #e8f2fb;
+  --dp-accent-soft-border: #bedcf3;
   --dp-warning-bg: #fffaeb;
   --dp-warning-border: #fedf89;
   --dp-input-bg: #ffffff;
-  --dp-chip-bg: #f2f4f7;
-  --dp-work-border: #b2a4ff;
-  --dp-work-bg: #f6f4ff;
+  --dp-chip-bg: #eef1f4;
+  --dp-work-border: #d8a72b;
+  --dp-work-bg: #fff6e0;
   --dp-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
   --dp-shadow-lg: 0 4px 8px rgba(16, 24, 40, 0.06), 0 12px 24px rgba(16, 24, 40, 0.06);
 
@@ -29,9 +114,9 @@
   background: var(--dp-bg);
   color: var(--dp-text);
   text-align: left;
-  max-width: 760px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 5rem;
+  padding: 2.5rem 2rem 5rem;
   border-radius: 16px;
   box-shadow: var(--dp-shadow-lg);
 }
@@ -46,69 +131,60 @@
 
 @media (prefers-color-scheme: dark) {
   .degree-planner-page:not([data-theme='light']) {
-    --dp-bg: #16171d;
-    --dp-panel-bg: #1f2028;
-    --dp-panel-bg-alt: #23242c;
-    --dp-border: #3a3d4a;
-    --dp-border-soft: #2e303a;
+    --dp-bg: #1c1e21;
+    --dp-panel-bg: #24262a;
+    --dp-panel-bg-alt: #2a2d31;
+    --dp-border: #3d4046;
+    --dp-border-soft: #33363b;
     --dp-text: #e5e7eb;
     --dp-text-secondary: #9ca3af;
-    --dp-accent: #7ea0f2;
-    --dp-accent-hover: #97b3f5;
+    --dp-accent: #6fa8e8;
+    --dp-accent-hover: #8ab8ed;
     --dp-accent-contrast: #0b1220;
     --dp-danger: #ff8a80;
     --dp-danger-bg: rgba(255, 138, 128, 0.1);
     --dp-danger-border: rgba(255, 138, 128, 0.35);
     --dp-success: #4ade80;
-    --dp-purple: #c084fc;
-    --dp-purple-bg: rgba(192, 132, 252, 0.12);
-    --dp-purple-border: rgba(192, 132, 252, 0.4);
+    --dp-accent-soft: #7bb4ea;
+    --dp-accent-soft-bg: rgba(111, 168, 232, 0.12);
+    --dp-accent-soft-border: rgba(111, 168, 232, 0.4);
     --dp-warning-bg: rgba(253, 224, 71, 0.08);
     --dp-warning-border: rgba(253, 224, 71, 0.35);
-    --dp-input-bg: #1a1b22;
-    --dp-chip-bg: #24252d;
-    --dp-work-border: #8b7cf0;
-    --dp-work-bg: rgba(139, 124, 240, 0.14);
+    --dp-input-bg: #1a1b1e;
+    --dp-chip-bg: #2c2f33;
+    --dp-work-border: #c9a227;
+    --dp-work-bg: rgba(201, 162, 39, 0.14);
     --dp-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     --dp-shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.45);
   }
 }
 
 .degree-planner-page[data-theme='dark'] {
-  --dp-bg: #16171d;
-  --dp-panel-bg: #1f2028;
-  --dp-panel-bg-alt: #23242c;
-  --dp-border: #3a3d4a;
-  --dp-border-soft: #2e303a;
+  --dp-bg: #1c1e21;
+  --dp-panel-bg: #24262a;
+  --dp-panel-bg-alt: #2a2d31;
+  --dp-border: #3d4046;
+  --dp-border-soft: #33363b;
   --dp-text: #e5e7eb;
   --dp-text-secondary: #9ca3af;
-  --dp-accent: #7ea0f2;
-  --dp-accent-hover: #97b3f5;
+  --dp-accent: #6fa8e8;
+  --dp-accent-hover: #8ab8ed;
   --dp-accent-contrast: #0b1220;
   --dp-danger: #ff8a80;
   --dp-danger-bg: rgba(255, 138, 128, 0.1);
   --dp-danger-border: rgba(255, 138, 128, 0.35);
   --dp-success: #4ade80;
-  --dp-purple: #c084fc;
-  --dp-purple-bg: rgba(192, 132, 252, 0.12);
-  --dp-purple-border: rgba(192, 132, 252, 0.4);
+  --dp-accent-soft: #7bb4ea;
+  --dp-accent-soft-bg: rgba(111, 168, 232, 0.12);
+  --dp-accent-soft-border: rgba(111, 168, 232, 0.4);
   --dp-warning-bg: rgba(253, 224, 71, 0.08);
   --dp-warning-border: rgba(253, 224, 71, 0.35);
-  --dp-input-bg: #1a1b22;
-  --dp-chip-bg: #24252d;
-  --dp-work-border: #8b7cf0;
-  --dp-work-bg: rgba(139, 124, 240, 0.14);
+  --dp-input-bg: #1a1b1e;
+  --dp-chip-bg: #2c2f33;
+  --dp-work-border: #c9a227;
+  --dp-work-bg: rgba(201, 162, 39, 0.14);
   --dp-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   --dp-shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.45);
-}
-
-.degree-planner-page h1 {
-  color: var(--dp-text);
-  font-size: 2.25rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  text-align: center;
-  margin: 0 0 1.5rem;
 }
 
 .degree-planner-page h2 {
@@ -185,6 +261,28 @@
   align-items: center;
   gap: 0.55rem;
   font-weight: 400;
+}
+
+.preferences-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 0.75rem;
+}
+
+.preferences-row .checkbox,
+.preferences-row .inline-field {
+  margin-bottom: 0;
+}
+
+.preferences-row .inline-field {
+  flex-direction: row;
+  align-items: center;
+}
+
+.preferences-row .inline-field input[type='number'] {
+  width: 4.5rem;
 }
 
 .degree-planner-page input[type='checkbox'] {
@@ -264,6 +362,7 @@
 
 .semesters {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin: 1rem 0;
 }
@@ -294,7 +393,7 @@
 }
 
 .course {
-  border-left: 3px solid var(--dp-purple);
+  border-left: 3px solid var(--dp-accent-soft);
   padding-left: 0.85rem;
 }
 
@@ -320,9 +419,9 @@
   font-size: 0.72rem;
   font-weight: 500;
   font-style: normal;
-  color: var(--dp-purple);
-  background: var(--dp-purple-bg);
-  border: 1px solid var(--dp-purple-border);
+  color: var(--dp-accent-soft);
+  background: var(--dp-accent-soft-bg);
+  border: 1px solid var(--dp-accent-soft-border);
   border-radius: 999px;
   padding: 0.15rem 0.6rem;
 }
@@ -470,16 +569,6 @@
   color: var(--dp-accent-contrast);
 }
 
-.mode-tabs.top-level-mode {
-  justify-content: center;
-  margin-bottom: 1.75rem;
-}
-
-.mode-tabs.top-level-mode button {
-  font-size: 0.95rem;
-  padding: 0.55rem 1.4rem;
-}
-
 .friend-card {
   border: 1px solid var(--dp-border);
   border-radius: 12px;
@@ -557,20 +646,20 @@
 }
 
 .collapsible.shared-suggestions {
-  background: var(--dp-purple-bg);
-  border: 1px solid var(--dp-purple-border);
+  background: var(--dp-accent-soft-bg);
+  border: 1px solid var(--dp-accent-soft-border);
   margin: 1.75rem 0;
 }
 
 .collapsible.shared-suggestions summary {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--dp-purple);
+  color: var(--dp-accent-soft);
   padding: 1rem 1.25rem;
 }
 
 .collapsible.shared-suggestions summary::before {
-  color: var(--dp-purple);
+  color: var(--dp-accent-soft);
 }
 
 .collapsible.shared-suggestions .collapsible-body {
@@ -587,7 +676,7 @@
 
 .collapsible.shared-suggestions li {
   background: var(--dp-panel-bg);
-  border: 1px solid var(--dp-purple-border);
+  border: 1px solid var(--dp-accent-soft-border);
   border-radius: 8px;
   padding: 0.75rem 1rem;
 }
