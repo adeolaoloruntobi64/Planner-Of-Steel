@@ -18,7 +18,7 @@ function isProgramSelector(value: unknown): value is ProgramSelector {
 const router = Router();
 
 router.post('/', async (req, res) => {
-  const { completedCourses, inProgressCourses, programs, semesters, semestersElapsed, startSession, interests } = req.body as {
+  const { completedCourses, inProgressCourses, programs, semesters, semestersElapsed, startSession, interests, includeSummers } = req.body as {
     completedCourses?: string[];
     inProgressCourses?: string[];
     programs?: unknown[];
@@ -26,6 +26,7 @@ router.post('/', async (req, res) => {
     semestersElapsed?: number;
     startSession?: Session;
     interests?: string;
+    includeSummers?: boolean;
   };
 
   if (!Array.isArray(completedCourses) || !Array.isArray(programs) || programs.length === 0 || !programs.every(isProgramSelector)) {
@@ -69,6 +70,7 @@ router.post('/', async (req, res) => {
       ...(semestersElapsed !== undefined && { semestersElapsed }),
       ...(startSession !== undefined && { startSession }),
       ...(interests !== undefined && { interests }),
+      ...(includeSummers !== undefined && { includeSummers }),
     });
     res.json(plan);
   } catch (err) {

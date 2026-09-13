@@ -3,16 +3,16 @@ CSCB07H3: CSCB07H3: Software Design
 CSCB07H3 already lines up for Priya Nadarajah and Marcus Oduya and Yun-Seo Park around semester 3 (summer and fall) — no changes needed for this one.
 
 MATB24H3: MATB24H3: Linear Algebra II
-MATB24H3 already lines up for Priya Nadarajah and Marcus Oduya and Yun-Seo Park around semester 3 (summer and fall) — no changes needed for this one.
+MATB24H3 already lines up for Priya Nadarajah and Marcus Oduya and Yun-Seo Park around semester 4 (summer and fall) — no changes needed for this one.
+
+STAB52H3: STAB52H3: An Introduction to Probability
+STAB52H3 already lines up for Priya Nadarajah and Marcus Oduya and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
+
+CSCC37H3: CSCC37H3: Introduction to Numerical Algorithms for Computational Mathematics
+CSCC37H3 already lines up for Priya Nadarajah and Marcus Oduya and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
 
 CSCA67H3: CSCA67H3: Discrete Mathematics
-CSCA67H3 already lines up for Priya Nadarajah and Marcus Oduya and Yun-Seo Park around semester 4 (summer and fall) — no changes needed for this one.
-
-CSCB36H3: CSCB36H3: Introduction to the Theory of Computation
-CSCB36H3 already lines up for Priya Nadarajah and Marcus Oduya and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
-
-CSCB63H3: CSCB63H3: Design and Analysis of Data Structures
-CSCB63H3 already lines up for Priya Nadarajah and Marcus Oduya and Yun-Seo Park around semester 6 (summer and fall) — no changes needed for this one.
+CSCA67H3 already lines up for Priya Nadarajah and Marcus Oduya and Yun-Seo Park around semester 6 (summer and fall) — no changes needed for this one.
 
 CSCA67H3: CSCA67H3: Discrete Mathematics
 CSCA67H3 already lines up for Priya Nadarajah and Marcus Oduya around semester 3 (summer and fall) — no changes needed for this one.
@@ -20,11 +20,11 @@ CSCA67H3 already lines up for Priya Nadarajah and Marcus Oduya around semester 3
 CSCB07H3: CSCB07H3: Software Design
 CSCB07H3 already lines up for Priya Nadarajah and Marcus Oduya around semester 3 (summer and fall) — no changes needed for this one.
 
-MATB24H3: MATB24H3: Linear Algebra II
-MATB24H3 already lines up for Priya Nadarajah and Marcus Oduya around semester 3 (summer and fall) — no changes needed for this one.
-
 CSCD03H3: CSCD03H3: Social Impact of Information Technology
 CSCD03H3 already lines up for Priya Nadarajah and Marcus Oduya around semester 3 (summer and fall) — no changes needed for this one.
+
+MATA37H3: MATA37H3: Calculus II for Mathematical Sciences
+MATA37H3 already lines up for Priya Nadarajah and Marcus Oduya around semester 4 (summer and fall) — no changes needed for this one.
 
 CSCB09H3: CSCB09H3: Software Tools and Systems Programming
 CSCB09H3 already lines up for Priya Nadarajah and Marcus Oduya around semester 4 (summer and fall) — no changes needed for this one.
@@ -35,26 +35,26 @@ CSCB07H3 already lines up for Priya Nadarajah and Yun-Seo Park around semester 3
 MATB24H3: MATB24H3: Linear Algebra II
 MATB24H3 already lines up for Priya Nadarajah and Yun-Seo Park around semester 3 (summer and fall) — no changes needed for this one.
 
-CSCA67H3: CSCA67H3: Discrete Mathematics
-CSCA67H3 already lines up for Priya Nadarajah and Yun-Seo Park around semester 4 (summer and fall) — no changes needed for this one.
-
-CSCB36H3: CSCB36H3: Introduction to the Theory of Computation
-CSCB36H3 already lines up for Priya Nadarajah and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
-
 STAB52H3: STAB52H3: An Introduction to Probability
 STAB52H3 already lines up for Priya Nadarajah and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
+
+CSCC37H3: CSCC37H3: Introduction to Numerical Algorithms for Computational Mathematics
+CSCC37H3 already lines up for Priya Nadarajah and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
+
+CSCA67H3: CSCA67H3: Discrete Mathematics
+CSCA67H3 already lines up for Priya Nadarajah and Yun-Seo Park around semester 6 (summer and fall) — no changes needed for this one.
 
 CSCB07H3: CSCB07H3: Software Design
 CSCB07H3 already lines up for Marcus Oduya and Yun-Seo Park around semester 3 (summer and fall) — no changes needed for this one.
 
 MATB24H3: MATB24H3: Linear Algebra II
-MATB24H3 already lines up for Marcus Oduya and Yun-Seo Park around semester 3 (summer and fall) — no changes needed for this one.
+MATB24H3 already lines up for Marcus Oduya and Yun-Seo Park around semester 4 (summer and fall) — no changes needed for this one.
 
-CSCA67H3: CSCA67H3: Discrete Mathematics
-CSCA67H3 already lines up for Marcus Oduya and Yun-Seo Park around semester 4 (summer and fall) — no changes needed for this one.
+STAB52H3: STAB52H3: An Introduction to Probability
+STAB52H3 already lines up for Marcus Oduya and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
 
-CSCB36H3: CSCB36H3: Introduction to the Theory of Computation
-CSCB36H3 already lines up for Marcus Oduya and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
+CSCC37H3: CSCC37H3: Introduction to Numerical Algorithms for Computational Mathematics
+CSCC37H3 already lines up for Marcus Oduya and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
 
 ANTA01H3: ANTA01H3: Introduction to Anthropology: Becoming Human
 ANTA01H3 already lines up for Marcus Oduya and Yun-Seo Park around semester 5 (summer and fall) — no changes needed for this one.
@@ -65,14 +65,15 @@ Priya Nadarajah and Marcus Oduya and Yun-Seo Park could both take CSCB07H3 by se
 Priya Nadarajah's plan
 SPECIALIST PROGRAM IN COMPUTER SCIENCE - Software Engineering Stream (SCIENCE)
 Dropped "ICSCA48H3" from SCSPE0795 requiredCourses: doesn't look like a real UofT course code
-Could not fetch info for GGRB06H3: No course found for GGRB06H3 at https://utsc.calendar.utoronto.ca/course/ggrb06h3
-Could not fetch info for ENGB51H3: No course found for ENGB51H3 at https://utsc.calendar.utoronto.ca/course/engb51h3
-Could not fetch info for CTLA19H3: No course found for CTLA19H3 at https://utsc.calendar.utoronto.ca/course/ctla19h3
-Could not fetch info for ACMA01H3: No course found for ACMA01H3 at https://utsc.calendar.utoronto.ca/course/acma01h3
-Could not fetch info for HUMA11H3: No course found for HUMA11H3 at https://utsc.calendar.utoronto.ca/course/huma11h3
+Dropped "ICSCA48H3" from SCSPE0795 elective group "A-level courses (choose 4 of the following to complete 3.0 credits with other required A-level courses)": doesn't look like a real UofT course code
 Could not fetch info for HUMA17H3: No course found for HUMA17H3 at https://utsc.calendar.utoronto.ca/course/huma17h3
-Could not fetch info for HUMA01H3: No course found for HUMA01H3 at https://utsc.calendar.utoronto.ca/course/huma01h3
+Could not fetch info for ENGB51H3: No course found for ENGB51H3 at https://utsc.calendar.utoronto.ca/course/engb51h3
+Could not fetch info for ACMA01H3: No course found for ACMA01H3 at https://utsc.calendar.utoronto.ca/course/acma01h3
+Could not fetch info for CTLA19H3: No course found for CTLA19H3 at https://utsc.calendar.utoronto.ca/course/ctla19h3
+Could not fetch info for HUMA11H3: No course found for HUMA11H3 at https://utsc.calendar.utoronto.ca/course/huma11h3
 Could not fetch info for HLTA01H3: No course found for HLTA01H3 at https://utsc.calendar.utoronto.ca/course/hlta01h3
+Could not fetch info for GGRB06H3: No course found for GGRB06H3 at https://utsc.calendar.utoronto.ca/course/ggrb06h3
+Could not fetch info for HUMA01H3: No course found for HUMA01H3 at https://utsc.calendar.utoronto.ca/course/huma01h3
 Could not fetch info for LGGA99H3: No course found for LGGA99H3 at https://utsc.calendar.utoronto.ca/course/lgga99h3
 CSCB09H3 does not appear to be offered in session F; deferring to a later semester.
 CSCB58H3 does not appear to be offered in session F; deferring to a later semester.
@@ -145,61 +146,61 @@ Semester 7 — Fall
 CSCC85H3 (0.5 credit)
 CSCC85H3: Fundamentals of Robotics and Automated Systems
 Elective choice — swap freely
+CSCD27H3 (0.5 credit)
+CSCD27H3: Computer and Network Security
+Elective choice — swap freely
+CSCD84H3 (0.5 credit)
+CSCD84H3: Artificial Intelligence
+Elective choice — swap freely
+CLAA06H3 (0.5 credit)
+CLAA06H3: Ancient Mythology II: Greece and Rome
+Breadth requirement — swap freely
 CSC488H1 (0.5 credit)
 CSC488H1: Compilers and Interpreters
 Breadth requirement — swap freely
-HISA01H3 (0.5 credit)
-HISA01H3: Drugs: A History
-Breadth requirement — swap freely
-PHLA10H3 (0.5 credit)
-PHLA10H3: Reason and Truth
-Matches your interest — swap freely
-CSCD27H3 (0.5 credit)
-CSCD27H3: Computer and Network Security
-Matches your interest — swap freely
 Semester 8 — Winter
+CTLA01H3 (0.5 credit)
+CTLA01H3: Foundations in Effective Academic Communication
+Matches your interest — swap freely
+CSCD58H3 (0.5 credit)
+CSCD58H3: Computer Networks
+Matches your interest — swap freely
 LINA01H3 (0.5 credit)
 LINA01H3: Introduction to Linguistics
-Matches your interest — swap freely
-CSCD84H3 (0.5 credit)
-CSCD84H3: Artificial Intelligence
-Matches your interest — swap freely
-PHLA11H3 (0.5 credit)
-PHLA11H3: Introduction to Ethics
 Matches your interest — swap freely
 CSC469H1 (0.5 credit)
 CSC469H1: Operating Systems Design and Implementation
 Matches your interest — swap freely
-ANTA01H3 (0.5 credit)
-ANTA01H3: Introduction to Anthropology: Becoming Human
+PHLA10H3 (0.5 credit)
+PHLA10H3: Reason and Truth
 Matches your interest — swap freely
 Semester 9 — Fall
-CSCD58H3 (0.5 credit)
-CSCD58H3: Computer Networks
+CSCD43H3 (0.5 credit)
+CSCD43H3: Database System Technology
 Matches your interest — swap freely
-ANTA02H3 (0.5 credit)
-ANTA02H3: Introduction to Anthropology: Society, Culture and Language
+PHLA11H3 (0.5 credit)
+PHLA11H3: Introduction to Ethics
 Matches your interest — swap freely
 Marcus Oduya's plan
 SPECIALIST PROGRAM IN COMPUTER SCIENCE - Comprehensive Stream (SCIENCE)
-Dropped "CSC438H" from SCSPE0510 elective group "Electives from courses related to the theory of computing": doesn't look like a real UofT course code
-Dropped "CSC448H" from SCSPE0510 elective group "Electives from courses related to the theory of computing": doesn't look like a real UofT course code
-Dropped "CSC465H" from SCSPE0510 elective group "Electives from courses related to the theory of computing": doesn't look like a real UofT course code
-Dropped "CSC" from SCSPE0510 elective group "CSC, MAT, or STA elective (C- or D-level, excluding specific courses)": doesn't look like a real UofT course code
-Dropped "MAT" from SCSPE0510 elective group "CSC, MAT, or STA elective (C- or D-level, excluding specific courses)": doesn't look like a real UofT course code
-Dropped "STA" from SCSPE0510 elective group "CSC, MAT, or STA elective (C- or D-level, excluding specific courses)": doesn't look like a real UofT course code
-Could not fetch info for ACMA01H3: No course found for ACMA01H3 at https://utsc.calendar.utoronto.ca/course/acma01h3
-Could not fetch info for CTLA19H3: No course found for CTLA19H3 at https://utsc.calendar.utoronto.ca/course/ctla19h3
+Dropped "CSC438H" from SCSPE0510 elective group "Electives from courses related to the theory of computing (0.5 credit)": doesn't look like a real UofT course code
+Dropped "CSC448H" from SCSPE0510 elective group "Electives from courses related to the theory of computing (0.5 credit)": doesn't look like a real UofT course code
+Dropped "CSC465H" from SCSPE0510 elective group "Electives from courses related to the theory of computing (0.5 credit)": doesn't look like a real UofT course code
+Dropped "CSC" from SCSPE0510 elective group "CSC, MAT, or STA elective (0.5 credit) - Any C- or D-level course": doesn't look like a real UofT course code
+Dropped "MAT" from SCSPE0510 elective group "CSC, MAT, or STA elective (0.5 credit) - Any C- or D-level course": doesn't look like a real UofT course code
+Dropped "STA" from SCSPE0510 elective group "CSC, MAT, or STA elective (0.5 credit) - Any C- or D-level course": doesn't look like a real UofT course code
+Could not fetch info for GGRB06H3: No course found for GGRB06H3 at https://utsc.calendar.utoronto.ca/course/ggrb06h3
 Could not fetch info for HUMA11H3: No course found for HUMA11H3 at https://utsc.calendar.utoronto.ca/course/huma11h3
-Could not fetch info for HLTA01H3: No course found for HLTA01H3 at https://utsc.calendar.utoronto.ca/course/hlta01h3
-Could not fetch info for HUMA01H3: No course found for HUMA01H3 at https://utsc.calendar.utoronto.ca/course/huma01h3
 Could not fetch info for ENGB51H3: No course found for ENGB51H3 at https://utsc.calendar.utoronto.ca/course/engb51h3
 Could not fetch info for LGGA99H3: No course found for LGGA99H3 at https://utsc.calendar.utoronto.ca/course/lgga99h3
+Could not fetch info for ACMA01H3: No course found for ACMA01H3 at https://utsc.calendar.utoronto.ca/course/acma01h3
+Could not fetch info for HLTA01H3: No course found for HLTA01H3 at https://utsc.calendar.utoronto.ca/course/hlta01h3
 Could not fetch info for HUMA17H3: No course found for HUMA17H3 at https://utsc.calendar.utoronto.ca/course/huma17h3
-Could not fetch info for GGRB06H3: No course found for GGRB06H3 at https://utsc.calendar.utoronto.ca/course/ggrb06h3
+Could not fetch info for CTLA19H3: No course found for CTLA19H3 at https://utsc.calendar.utoronto.ca/course/ctla19h3
+Could not fetch info for HUMA01H3: No course found for HUMA01H3 at https://utsc.calendar.utoronto.ca/course/huma01h3
+Kept MATA31H3 in the plan despite an exclusion from a completed course: another requirement's prerequisite specifically needs MATA31H3, which that exclusion doesn't satisfy.
 CSCB09H3 does not appear to be offered in session F; deferring to a later semester.
 CSCB58H3 does not appear to be offered in session F; deferring to a later semester.
-Stopped early: a full semester pass placed no new courses, so the remaining requirements look unreachable (unmet prerequisite chain or a course that never appears in any offering search).
 Completed
 CSCA08H3
 MATA22H3
@@ -215,115 +216,108 @@ CSCA67H3 (0.5 credit)
 CSCA67H3: Discrete Mathematics
 LEC LEC01
 TUT TUT0001
+MATA31H3 (0.5 credit)
+MATA31H3: Calculus I for Mathematical Sciences
+LEC LEC02
+TUT TUT0001
 CSCB07H3 (0.5 credit)
 CSCB07H3: Software Design
 LEC LEC02
-TUT TUT0001
-MATB24H3 (0.5 credit)
-MATB24H3: Linear Algebra II
-LEC LEC01
 TUT TUT0001
 CSCD03H3 (0.5 credit)
 CSCD03H3: Social Impact of Information Technology
 Breadth requirement — swap freely
 LEC LEC01
-TUT TUT0001
+TUT TUT0002
 ANTA01H3 (0.5 credit)
 ANTA01H3: Introduction to Anthropology: Becoming Human
 Breadth requirement — swap freely
-LEC LEC02
+LEC LEC01
 TUT TUT0001
 Semester 4 — Winter
+MATA37H3 (0.5 credit)
+MATA37H3: Calculus II for Mathematical Sciences
 CSCB09H3 (0.5 credit)
 CSCB09H3: Software Tools and Systems Programming
 CSCB36H3 (0.5 credit)
 CSCB36H3: Introduction to the Theory of Computation
 CSCB58H3 (0.5 credit)
 CSCB58H3: Computer Organization
-CSCC01H3 (0.5 credit)
-CSCC01H3: Introduction to Software Engineering
-Elective choice — swap freely
-MATC44H3 (0.5 credit)
-MATC44H3: Introduction to Combinatorics
-Elective choice — swap freely
+MATB24H3 (0.5 credit)
+MATB24H3: Linear Algebra II
 Semester 5 — Fall
 CSCB63H3 (0.5 credit)
 CSCB63H3: Design and Analysis of Data Structures
+STAB52H3 (0.5 credit)
+STAB52H3: An Introduction to Probability
 CSCC69H3 (0.5 credit)
 CSCC69H3: Operating Systems
 CSCC24H3 (0.5 credit)
 CSCC24H3: Principles of Programming Languages
-CTLA01H3 (0.5 credit)
-CTLA01H3: Foundations in Effective Academic Communication
-Breadth requirement — swap freely
-CSC488H1 (0.5 credit)
-CSC488H1: Compilers and Interpreters
-Breadth requirement — swap freely
+CSCC37H3 (0.5 credit)
+CSCC37H3: Introduction to Numerical Algorithms for Computational Mathematics
 Semester 6 — Winter
 CSCC43H3 (0.5 credit)
 CSCC43H3: Introduction to Databases
+CSCC73H3 (0.5 credit)
+CSCC73H3: Algorithm Design and Analysis
 CSCC63H3 (0.5 credit)
 CSCC63H3: Computability and Computational Complexity
+MATB41H3 (0.5 credit)
+MATB41H3: Techniques of the Calculus of Several Variables I
+CSCD27H3 (0.5 credit)
+CSCD27H3: Computer and Network Security
+Elective choice — swap freely
+Semester 7 — Fall
+CSCD37H3 (0.5 credit)
+CSCD37H3: Analysis of Numerical Algorithms for Computational Mathematics
+MATC44H3 (0.5 credit)
+MATC44H3: Introduction to Combinatorics
+Elective choice — swap freely
+CTLA01H3 (0.5 credit)
+CTLA01H3: Foundations in Effective Academic Communication
+Breadth requirement — swap freely
+CSC469H1 (0.5 credit)
+CSC469H1: Operating Systems Design and Implementation
+Breadth requirement — swap freely
 PHLA10H3 (0.5 credit)
 PHLA10H3: Reason and Truth
 Matches your interest — swap freely
-CSCD27H3 (0.5 credit)
-CSCD27H3: Computer and Network Security
+Semester 8 — Winter
+CSCD58H3 (0.5 credit)
+CSCD58H3: Computer Networks
 Matches your interest — swap freely
 MATC32H3 (0.5 credit)
 MATC32H3: Graph Theory and Algorithms for its Applications
 Matches your interest — swap freely
-Semester 7 — Fall
-PHLA11H3 (0.5 credit)
-PHLA11H3: Introduction to Ethics
+LINA01H3 (0.5 credit)
+LINA01H3: Introduction to Linguistics
 Matches your interest — swap freely
-CSCD01H3 (0.5 credit)
-CSCD01H3: Engineering Large Software Systems
+CSCC11H3 (0.5 credit)
+CSCC11H3: Introduction to Machine Learning and Data Mining
 Matches your interest — swap freely
 MATC09H3 (0.5 credit)
 MATC09H3: Introduction to Mathematical Logic
 Matches your interest — swap freely
-LINA01H3 (0.5 credit)
-LINA01H3: Introduction to Linguistics
-Matches your interest — swap freely
-CSC469H1 (0.5 credit)
-CSC469H1: Operating Systems Design and Implementation
-Matches your interest — swap freely
-Semester 8 — Winter
-GGRA02H3 (0.5 credit)
-GGRA02H3: Introduction to Human Geography: Imagining Better Worlds
-Matches your interest — swap freely
-CSCD70H3 (0.5 credit)
-CSCD70H3: Compiler Optimization
-Matches your interest — swap freely
-GGRA03H3 (0.5 credit)
-GGRA03H3: Cities and Environments: Urban Life, Livelihoods & Landscapes
-Matches your interest — swap freely
-CSCC09H3 (0.5 credit)
-CSCC09H3: Programming on the Web
-Matches your interest — swap freely
-ENGA10H3 (0.5 credit)
-ENGA10H3: Literature and Film for Our Time: Visions and Revisions
-Matches your interest — swap freely
 Semester 9 — Fall
-CSCC10H3 (0.5 credit)
-CSCC10H3: Human-Computer Interaction
+PHLA11H3 (0.5 credit)
+PHLA11H3: Introduction to Ethics
 Matches your interest — swap freely
-GGRB05H3 (0.5 credit)
-GGRB05H3: Urban Geography
+CSCD25H3 (0.5 credit)
+CSCD25H3: Advanced Data Science
 Matches your interest — swap freely
-Semester 10 — Winter
-No courses placed this semester.
-
-Still needed
-MATA37H3, STAB52H3, CSCC73H3, CSCC37H3, CSCD37H3, MATB41H3
-
 Yun-Seo Park's plan
 SPECIALIST PROGRAM IN STATISTICS - Statistical Machine Learning and Data Science Stream (SCIENCE)
-Dropped "Any C or D-level CSC, MAT or STA courses" from SCSPE2289Z elective group "1.5 credits from C or D-level CSC, MAT or STA courses (excluding STAC32H3, STAC53H3, STAD29H3; minimum 1.0 credit must be STA courses)": doesn't look like a real UofT course code
+Dropped "Any C or D-level CSC, MAT or STA courses, excluding STAC32H3, STAC53H3, and STAD29H3" from SCSPE2289Z elective group "Electives: C or D-level CSC, MAT or STA courses (1.5 credits, 1.0 credit must be STA courses)": doesn't look like a real UofT course code
 Could not fetch info for ACMA01H3: No course found for ACMA01H3 at https://utsc.calendar.utoronto.ca/course/acma01h3
 Could not fetch info for MATA67H3: No course found for MATA67H3 at https://utsc.calendar.utoronto.ca/course/mata67h3
-Stopped early: a full semester pass placed no new courses, so the remaining requirements look unreachable (unmet prerequisite chain or a course that never appears in any offering search).
+Could not fetch info for implied prerequisite CSCA65H3: No course found for CSCA65H3 at https://utsc.calendar.utoronto.ca/course/csca65h3
+Kept STAB57H3 in the plan despite an exclusion from a completed course: another requirement's prerequisite specifically needs STAB57H3, which that exclusion doesn't satisfy.
+Could not fetch info for implied prerequisite CSCA65H3: No course found for CSCA65H3 at https://utsc.calendar.utoronto.ca/course/csca65h3
+Could not fetch info for implied prerequisite CSCA65H3: No course found for CSCA65H3 at https://utsc.calendar.utoronto.ca/course/csca65h3
+Could not fetch info for implied prerequisite CSCA65H3: No course found for CSCA65H3 at https://utsc.calendar.utoronto.ca/course/csca65h3
+Could not fetch info for implied prerequisite CSCA65H3: No course found for CSCA65H3 at https://utsc.calendar.utoronto.ca/course/csca65h3
+Could not fetch info for implied prerequisite CSCA65H3: No course found for CSCA65H3 at https://utsc.calendar.utoronto.ca/course/csca65h3
 Completed
 CSCA08H3
 MATA22H3
@@ -358,6 +352,8 @@ TUT TUT0003
 Semester 4 — Winter
 MATB61H3 (0.5 credit)
 MATB61H3: Linear Programming and Optimization
+STAB57H3 (0.5 credit)
+STAB57H3: An Introduction to Statistics
 STAC62H3 (0.5 credit)
 STAC62H3: Probability and Stochastic Processes I
 CSCC11H3 (0.5 credit)
@@ -365,29 +361,40 @@ CSCC11H3: Introduction to Machine Learning and Data Mining
 CTLA01H3 (0.5 credit)
 CTLA01H3: Foundations in Effective Academic Communication
 Elective choice — swap freely
-CSCA67H3 (0.5 credit)
-CSCA67H3: Discrete Mathematics
-Elective choice — swap freely
 Semester 5 — Fall
-CSCB36H3 (0.5 credit)
-CSCB36H3: Introduction to the Theory of Computation
+STAC67H3 (0.5 credit)
+STAC67H3: Regression Analysis
+STAC58H3 (0.5 credit)
+STAC58H3: Statistical Inference
+STAD68H3 (0.5 credit)
+STAD68H3: Advanced Machine Learning and Data Mining
+Elective choice — swap freely
 ANTA01H3 (0.5 credit)
 ANTA01H3: Introduction to Anthropology: Becoming Human
 Breadth requirement — swap freely
 ANTA02H3 (0.5 credit)
 ANTA02H3: Introduction to Anthropology: Society, Culture and Language
 Breadth requirement — swap freely
+Semester 6 — Winter
+STAD37H3 (0.5 credit)
+STAD37H3: Multivariate Analysis
 PHLA10H3 (0.5 credit)
 PHLA10H3: Reason and Truth
 Breadth requirement — swap freely
-ENGA10H3 (0.5 credit)
-ENGA10H3: Literature and Film for Our Time: Visions and Revisions
+LINA01H3 (0.5 credit)
+LINA01H3: Introduction to Linguistics
 Matches your interest — swap freely
-Semester 6 — Winter
-CSCB63H3 (0.5 credit)
-CSCB63H3: Design and Analysis of Data Structures
+CSCA67H3 (0.5 credit)
+CSCA67H3: Discrete Mathematics
+Matches your interest — swap freely
 STAA57H3 (0.5 credit)
 STAA57H3: Introduction to Data Science
+Matches your interest — swap freely
+Semester 7 — Fall
+CSCB36H3 (0.5 credit)
+CSCB36H3: Introduction to the Theory of Computation
+STAD78H3 (0.5 credit)
+STAD78H3: Machine Learning Theory
 Matches your interest — swap freely
 PHLA11H3 (0.5 credit)
 PHLA11H3: Introduction to Ethics
@@ -395,12 +402,14 @@ Matches your interest — swap freely
 CSCB20H3 (0.5 credit)
 CSCB20H3: Introduction to Databases and Web Applications
 Matches your interest — swap freely
+ENGA10H3 (0.5 credit)
+ENGA10H3: Literature and Film for Our Time: Visions and Revisions
+Matches your interest — swap freely
+Semester 8 — Winter
+CSCB63H3 (0.5 credit)
+CSCB63H3: Design and Analysis of Data Structures
 ENGA11H3 (0.5 credit)
 ENGA11H3: Literature and Film for Our Time: Dawn of the Digital
-Matches your interest — swap freely
-Semester 7 — Fall
-LINA01H3 (0.5 credit)
-LINA01H3: Introduction to Linguistics
 Matches your interest — swap freely
 ENGB06H3 (0.5 credit)
 ENGB06H3: Canadian Literature to 1900
@@ -411,37 +420,10 @@ Matches your interest — swap freely
 ENGB08H3 (0.5 credit)
 ENGB08H3: American Literature to 1860
 Matches your interest — swap freely
+Semester 9 — Fall
 ENGB09H3 (0.5 credit)
 ENGB09H3: American Literature from the Civil War to the Present
 Matches your interest — swap freely
-Semester 8 — Winter
 ENGB17H3 (0.5 credit)
 ENGB17H3: Contemporary Literature from the Caribbean
 Matches your interest — swap freely
-ENGB19H3 (0.5 credit)
-ENGB19H3: Contemporary Literature from South Asia
-Matches your interest — swap freely
-ENGB50H3 (0.5 credit)
-ENGB50H3: Women and Literature: Forging a Tradition
-Matches your interest — swap freely
-GGRA02H3 (0.5 credit)
-GGRA02H3: Introduction to Human Geography: Imagining Better Worlds
-Matches your interest — swap freely
-GGRA03H3 (0.5 credit)
-GGRA03H3: Cities and Environments: Urban Life, Livelihoods & Landscapes
-Matches your interest — swap freely
-Semester 9 — Fall
-GGRB05H3 (0.5 credit)
-GGRB05H3: Urban Geography
-Matches your interest — swap freely
-WSTA01H3 (0.5 credit)
-WSTA01H3: Introduction to Women's and Gender Studies
-Matches your interest — swap freely
-Semester 10 — Winter
-No courses placed this semester.
-
-Still needed
-STAC67H3, STAD37H3, STAC58H3
-
-Elective choices remaining
-Upper Level course (choose one of Advanced Machine Learning or Machine Learning Theory): choose 1 more from STAD68H3, STAD78H3

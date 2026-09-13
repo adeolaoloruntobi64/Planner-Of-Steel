@@ -64,6 +64,40 @@ test('retrieveTree resolves MATB41H3 as satisfiable via MATA37H3 alone, not bloc
   assert.ok(tree.prereqGroups.some((g) => g.includes('MATA37H3')), `expected an OR-group containing MATA37H3, got ${JSON.stringify(tree.prereqGroups)}`);
 });
 
+test('retrieveTree extracts a credit-count threshold from a prerequisite with no course code', async () => {
+  // Real UofT text (CSCD03H3): "14.0 credits and enrolment in a Computer Science Subject POSt.
+  // Restricted to..." — no course code at all, so parsePrereqGroups correctly produces zero
+  // groups. Without tracking the credit threshold separately, an empty AND-of-OR check is
+  // vacuously true, making a 4th-year-only course look completely prereq-free.
+  clearTreeMemo();
+  const tree = await retrieveTree('CSCD03H3', 1);
+  assert.deepEqual(tree.prereqGroups, [], 'expected no course-code prereq groups');
+  assert.equal(tree.minCreditsRequired, 14, `expected a 14-credit threshold, got ${tree.minCreditsRequired}`);
+});
+
+test('retrieveTree applies a level-letter credit floor and flags consent-gated independent study courses', async () => {
+  // Real UofT text (STAD95H3, "Statistics Project"): "Students must obtain consent from the
+  // Supervisor of Studies before registering for this course." — no course code AND no numeric
+  // credit threshold at all, so neither prereqGroups nor the earlier credit-threshold parse
+  // catch it. The course's own level letter ("D") is the only signal left that this shouldn't
+  // be scheduled early, and the consent requirement means it shouldn't be auto-picked at all.
+  clearTreeMemo();
+  const tree = await retrieveTree('STAD95H3', 1);
+  assert.deepEqual(tree.prereqGroups, []);
+  assert.ok(tree.minCreditsRequired !== undefined && tree.minCreditsRequired >= 14, `expected a D-level credit floor, got ${tree.minCreditsRequired}`);
+  assert.equal(tree.requiresPermission, true, 'expected a consent-gated course to be flagged');
+});
+
+test('retrieveTree does not apply the year-level credit floor to co-op administrative course codes', async () => {
+  // COPB50H3 ("Foundations for Success in Arts and Science Co-op") is a genuine first-year
+  // co-op prep course, but its code's 4th character ("B") coincidentally looks like a 2nd-year
+  // level letter under the normal A-D convention — co-op codes don't follow that convention at
+  // all, so applying the floor here would wrongly delay a real first-year requirement.
+  clearTreeMemo();
+  const tree = await retrieveTree('COPB50H3', 1);
+  assert.ok(!tree.minCreditsRequired, `expected no credit floor on a co-op prep course, got ${tree.minCreditsRequired}`);
+});
+
 test('retrieveTree truncates instead of looping when maxDepth is hit', async () => {
   clearTreeMemo();
   const tree = await retrieveTree('CSC148H1', 1);

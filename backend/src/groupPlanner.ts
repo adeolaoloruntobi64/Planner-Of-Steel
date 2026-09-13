@@ -22,6 +22,7 @@ export interface GroupPlanOptions {
    * with no cross-friend suggestions. */
   constraintsPrompt?: string;
   semesters?: number;
+  includeSummers?: boolean;
 }
 
 export interface SharedSuggestion {
@@ -154,6 +155,38 @@ async function rankedSharedCandidates(
   return results.slice(0, options.limit);
 }
 
+function friendSetKey(names: string[]): string {
+  return [...names].map((n) => n.toLowerCase()).sort().join('|');
+}
+
+/**
+ * Different constraints (or the full-group vs. pairwise passes for "maximize-shared") can
+ * independently land on the exact same course as their best answer — e.g. once "Priya, Marcus,
+ * and Yun-Seo could share CSCB07H3" is found, the pairwise "Priya and Marcus could share
+ * CSCB07H3" pass says nothing new, and a separate "take-together" constraint can rediscover the
+ * very same course/group. Drop exact duplicates, then drop any suggestion whose friend group is
+ * a strict subset of another suggestion for the SAME course — the bigger group already implies it.
+ */
+function dedupeSharedSuggestions(suggestions: SharedSuggestion[]): SharedSuggestion[] {
+  const seen = new Set<string>();
+  const exactDeduped = suggestions.filter((s) => {
+    const key = `${s.code}::${friendSetKey(s.friendNames)}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  return exactDeduped.filter((s) => {
+    const sSet = new Set(s.friendNames.map((n) => n.toLowerCase()));
+    return !exactDeduped.some((other) => {
+      if (other === s || other.code !== s.code) return false;
+      const otherSet = new Set(other.friendNames.map((n) => n.toLowerCase()));
+      if (otherSet.size <= sSet.size) return false; // only a strictly bigger group subsumes
+      return [...sSet].every((n) => otherSet.has(n));
+    });
+  });
+}
+
 /**
  * Plans each friend's degree independently (each gets their own realistic, correct plan —
  * nothing about one friend's requirements or prerequisites should ever bend to accommodate
@@ -177,6 +210,7 @@ export async function buildGroupPlan(opts: GroupPlanOptions): Promise<GroupPlan>
         ...(f.startSession !== undefined && { startSession: f.startSession }),
         ...(f.interests !== undefined && { interests: f.interests }),
         ...(opts.semesters !== undefined && { semesters: opts.semesters }),
+        ...(opts.includeSummers !== undefined && { includeSummers: opts.includeSummers }),
       }),
     }))
   );
@@ -288,5 +322,5 @@ export async function buildGroupPlan(opts: GroupPlanOptions): Promise<GroupPlan>
     }
   }
 
-  return { friends: friendPlans, sharedSuggestions, warnings };
+  return { friends: friendPlans, sharedSuggestions: dedupeSharedSuggestions(sharedSuggestions), warnings };
 }

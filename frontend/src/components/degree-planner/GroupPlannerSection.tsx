@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { buildGroupPlan, type FriendInput, type GroupPlan } from '../../api';
 import { StudentInputs, type StudentInputsHandle } from './StudentInputs';
 import { PlanResults } from './PlanResults';
+import { Collapsible } from './Collapsible';
 
 interface FriendSlot {
   id: string;
@@ -21,6 +22,7 @@ export function GroupPlannerSection() {
   const [constraintsPrompt, setConstraintsPrompt] = useState('');
   const [planToCompletion, setPlanToCompletion] = useState(true);
   const [semesters, setSemesters] = useState(2);
+  const [includeSummers, setIncludeSummers] = useState(false);
 
   const [status, setStatus] = useState<'idle' | 'parsing' | 'planning' | 'done' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
@@ -77,6 +79,7 @@ export function GroupPlannerSection() {
         friends: resolvedFriends,
         ...(constraintsPrompt.trim() && { constraintsPrompt: constraintsPrompt.trim() }),
         ...(planToCompletion ? {} : { semesters }),
+        includeSummers,
       });
       setGroupPlan(result);
       setStatus('done');
@@ -153,6 +156,14 @@ export function GroupPlannerSection() {
               <input type="number" min={1} max={20} value={semesters} onChange={(e) => setSemesters(Number(e.target.value))} />
             </label>
           )}
+          <label className="checkbox">
+            <input type="checkbox" checked={includeSummers} onChange={(e) => setIncludeSummers(e.target.checked)} />
+            Take courses in summer semesters
+          </label>
+          <p className="hint">
+            Off by default — summers still show up in each plan as an explicit break so everyone knows they're there;
+            check this to actually schedule courses in them instead (useful if you want to overlap over a summer).
+          </p>
         </fieldset>
 
         {!namesUnique && <p className="error">Friend names must be unique.</p>}
@@ -167,8 +178,11 @@ export function GroupPlannerSection() {
       {groupPlan && (
         <div className="group-plan-results">
           {groupPlan.sharedSuggestions.length > 0 && (
-            <div className="shared-suggestions">
-              <h2>Shared suggestions</h2>
+            <Collapsible
+              className="shared-suggestions"
+              defaultOpen
+              summary={`🤝 Shared suggestions (${groupPlan.sharedSuggestions.length})`}
+            >
               <ul>
                 {groupPlan.sharedSuggestions.map((s, i) => (
                   <li key={i}>
@@ -179,15 +193,17 @@ export function GroupPlannerSection() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </Collapsible>
           )}
 
           {groupPlan.warnings.length > 0 && (
-            <ul className="warnings">
-              {groupPlan.warnings.map((w, i) => (
-                <li key={i}>{w}</li>
-              ))}
-            </ul>
+            <Collapsible className="warnings-collapsible" summary={`⚠ ${groupPlan.warnings.length} warning${groupPlan.warnings.length === 1 ? '' : 's'}`}>
+              <ul className="warnings">
+                {groupPlan.warnings.map((w, i) => (
+                  <li key={i}>{w}</li>
+                ))}
+              </ul>
+            </Collapsible>
           )}
 
           {groupPlan.friends.map((f) => (

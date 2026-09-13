@@ -14,6 +14,7 @@ export function DegreePlannerPage() {
 
   const [planToCompletion, setPlanToCompletion] = useState(true);
   const [semesters, setSemesters] = useState(2);
+  const [includeSummers, setIncludeSummers] = useState(false);
 
   const [status, setStatus] = useState<'idle' | 'parsing' | 'planning' | 'done' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
@@ -41,6 +42,7 @@ export function DegreePlannerPage() {
         ...(resolved.semestersElapsed !== undefined && { semestersElapsed: resolved.semestersElapsed }),
         ...(resolved.startSession !== undefined && { startSession: resolved.startSession }),
         ...(resolved.interests !== undefined && { interests: resolved.interests }),
+        includeSummers,
       });
       setPlan(result);
       setStatus('done');
@@ -88,6 +90,14 @@ export function DegreePlannerPage() {
                   />
                 </label>
               )}
+              <label className="checkbox">
+                <input type="checkbox" checked={includeSummers} onChange={(e) => setIncludeSummers(e.target.checked)} />
+                Take courses in summer semesters
+              </label>
+              <p className="hint">
+                Off by default — summers still show up in the plan as an explicit break so you know they're there; check
+                this to actually schedule courses in them instead.
+              </p>
             </fieldset>
 
             <button type="submit" disabled={!canSubmit}>

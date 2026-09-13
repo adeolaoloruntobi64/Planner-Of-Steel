@@ -62,6 +62,26 @@ export async function listProgramSections(campus: Campus): Promise<ProgramSectio
   return [...seen.values()];
 }
 
+/**
+ * Every course code linked from a subject section's calendar page. A section page lists every
+ * course referenced by any program within it, which in practice covers the subject's real
+ * course list — used to resolve vague elective wording like "any C- or D-level STA course"
+ * into actual course codes instead of dropping it outright for not being a literal code.
+ */
+export async function listSectionCourseCodes(campus: Campus, sectionSlug: string): Promise<string[]> {
+  const host = CAMPUS_HOST[campus];
+  const html = await fetchHtml(`https://${host}/section/${sectionSlug}`);
+  const $ = cheerio.load(html);
+
+  const codes = new Set<string>();
+  $('a[href^="/course/"]').each((_, el) => {
+    const href = $(el).attr('href') ?? '';
+    const match = href.match(/^\/course\/([a-zA-Z0-9]+)$/);
+    if (match) codes.add(match[1]!.toUpperCase());
+  });
+  return [...codes];
+}
+
 const CODE_LABEL_RE = /^(.+?)\s*-\s*([A-Z]{2,6}[A-Z0-9]{3,8})$/;
 
 /** Lists the individual programs (Major/Specialist/Minor/Focus/...) within one subject-area section. */

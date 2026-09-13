@@ -1,5 +1,5 @@
 export type Campus = 'stgeorge' | 'utsc' | 'utm';
-export type Session = 'F' | 'S' | 'Y';
+export type Session = 'F' | 'S' | 'Y' | 'SU';
 
 export interface ProgramSection {
   name: string;
@@ -48,7 +48,7 @@ export interface PlacedCourse {
 export interface SemesterPlan {
   index: number;
   session: Session;
-  type: 'academic' | 'work';
+  type: 'academic' | 'work' | 'break';
   courses: PlacedCourse[];
 }
 
@@ -127,6 +127,9 @@ export interface BuildPlanInput {
   semestersElapsed?: number;
   startSession?: 'F' | 'S';
   interests?: string;
+  /** Whether to actually schedule courses in summer terms; defaults to false. Summer still
+   * shows up as an explicit "break" in the plan either way. */
+  includeSummers?: boolean;
 }
 
 export function buildPlan(input: BuildPlanInput): Promise<DegreePlan> {
@@ -165,6 +168,7 @@ export interface BuildGroupPlanInput {
   friends: FriendInput[];
   constraintsPrompt?: string;
   semesters?: number;
+  includeSummers?: boolean;
 }
 
 export function buildGroupPlan(input: BuildGroupPlanInput): Promise<GroupPlan> {

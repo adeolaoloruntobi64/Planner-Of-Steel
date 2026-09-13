@@ -16,6 +16,11 @@ test('fetchCourseInfo scrapes a St. George course', async () => {
   assert.match(info.prerequisite ?? '', /CSC108H1/);
   assert.match(info.exclusion ?? '', /CSC148H5/);
   assert.ok(info.description && info.description.length > 20);
+  // The calendar page's own <h1> reads "CSC148H1: Introduction to Computer Science" — every
+  // caller already has the code separately, so the stored title shouldn't repeat it (that's
+  // what produced "CSC148H1: CSC148H1: Introduction to Computer Science" wherever code and
+  // title get displayed together).
+  assert.ok(!info.title.startsWith('CSC148H1'), `expected the course code prefix to be stripped from the title, got: "${info.title}"`);
 });
 
 test('fetchCourseInfo scrapes a UTSC course', async () => {

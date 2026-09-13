@@ -63,7 +63,12 @@ export async function fetchCourseInfo(code: string): Promise<CourseInfo> {
   if (article.length === 0) {
     throw new Error(`No course found for ${code} at ${url}`);
   }
-  const title = $('h1.page-title').first().text().replace(/\s+/g, ' ').trim() || code;
+  // The calendar page's own title is formatted "CODE: Name" (e.g. "CSCA67H3: Discrete
+  // Mathematics") — every caller already has the code separately and displays it alongside
+  // this title, so keeping the prefix here means it shows up doubled everywhere downstream
+  // (plan output, shared-suggestion cards, etc.). Strip it once, at the source.
+  const rawTitle = $('h1.page-title').first().text().replace(/\s+/g, ' ').trim() || code;
+  const title = rawTitle.replace(new RegExp(`^${code}\\s*:\\s*`, 'i'), '');
   const description = fieldText($, article, 'desc') ?? textOf(article.find('.field--name-body').first());
   const prerequisite = fieldText($, article, 'prerequisite');
   const corequisite = fieldText($, article, 'corequisite');

@@ -1,6 +1,7 @@
 import type { DegreePlan, PlacementCategory } from '../../api';
+import { Collapsible } from './Collapsible';
 
-const SESSION_LABELS: Record<string, string> = { F: 'Fall', S: 'Winter', Y: 'Fall/Winter' };
+const SESSION_LABELS: Record<string, string> = { F: 'Fall', S: 'Winter', Y: 'Fall/Winter', SU: 'Summer' };
 
 const CATEGORY_LABELS: Partial<Record<PlacementCategory, string>> = {
   elective: 'Elective choice — swap freely',
@@ -21,11 +22,13 @@ export function PlanResults({ plan }: Props) {
       <h2>{plan.programs.join(' + ')}</h2>
 
       {plan.warnings.length > 0 && (
-        <ul className="warnings">
-          {plan.warnings.map((w, i) => (
-            <li key={i}>{w}</li>
-          ))}
-        </ul>
+        <Collapsible className="warnings-collapsible" summary={`⚠ ${plan.warnings.length} warning${plan.warnings.length === 1 ? '' : 's'}`}>
+          <ul className="warnings">
+            {plan.warnings.map((w, i) => (
+              <li key={i}>{w}</li>
+            ))}
+          </ul>
+        </Collapsible>
       )}
 
       {(completed.length > 0 || inProgress.length > 0) && (
@@ -62,12 +65,21 @@ export function PlanResults({ plan }: Props) {
           <h3>Future</h3>
           <div className="semesters">
             {plan.semesters.map((semester) => (
-              <div key={semester.index} className={semester.type === 'work' ? 'semester-card work-semester' : 'semester-card'}>
+              <div
+                key={semester.index}
+                className={
+                  semester.type === 'work' ? 'semester-card work-semester' : semester.type === 'break' ? 'semester-card break-semester' : 'semester-card'
+                }
+              >
                 <h4>
-                  Semester {semester.index}
-                  {semester.type === 'work' ? ' — Work Term' : ` — ${SESSION_LABELS[semester.session] ?? semester.session}`}
+                  Semester {semester.index} — {SESSION_LABELS[semester.session] ?? semester.session}
+                  {semester.type === 'work' ? ' (Work Term)' : semester.type === 'break' ? ' (break)' : ''}
                 </h4>
-                {semester.courses.length === 0 ? (
+                {semester.type === 'break' ? (
+                  <p className="empty">
+                    Skipped by default — check "Take courses in summer semesters" in Preferences to plan courses here instead.
+                  </p>
+                ) : semester.courses.length === 0 ? (
                   <p className="empty">No courses placed this semester.</p>
                 ) : (
                   <ul className="courses">

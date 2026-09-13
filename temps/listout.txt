@@ -1,107 +1,174 @@
-Recognized: CSCA08H3, MATA31H3, MATA22H3, ENGA10H3, PHLA10H3, CSCA48H3, CSCA67H3, MATA37H3, LINA01H3, MGTA01H3, CSCB07H3, STAB52H3, MADA01H3, ANTA01H3, HLTA02H3, CSCB09H3, CSCB36H3, CSCB58H3, CSCB63H3, MATB24H3, COPB50H3, EESA01H3
-
-SPECIALIST PROGRAM IN COMPUTER SCIENCE - Comprehensive Stream (SCIENCE)
-Dropped "ICSCA48H3" from SCSPE0510 requiredCourses: doesn't look like a real UofT course code
-Dropped "CSC438H" from SCSPE0510 elective group "Electives from courses related to the theory of computing": doesn't look like a real UofT course code
-Dropped "CSC448H" from SCSPE0510 elective group "Electives from courses related to the theory of computing": doesn't look like a real UofT course code
-Dropped "CSC465H" from SCSPE0510 elective group "Electives from courses related to the theory of computing": doesn't look like a real UofT course code
-Dropped "CSC" from SCSPE0510 elective group "CSC, MAT, or STA elective": doesn't look like a real UofT course code
-Dropped "MAT" from SCSPE0510 elective group "CSC, MAT, or STA elective": doesn't look like a real UofT course code
-Dropped "STA" from SCSPE0510 elective group "CSC, MAT, or STA elective": doesn't look like a real UofT course code
-Could not fetch info for LGGA99H3: No course found for LGGA99H3 at https://utsc.calendar.utoronto.ca/course/lgga99h3
-Could not fetch info for HLTA01H3: No course found for HLTA01H3 at https://utsc.calendar.utoronto.ca/course/hlta01h3
-Could not fetch info for CTLA19H3: No course found for CTLA19H3 at https://utsc.calendar.utoronto.ca/course/ctla19h3
-Could not fetch info for HUMA01H3: No course found for HUMA01H3 at https://utsc.calendar.utoronto.ca/course/huma01h3
-Could not fetch info for HUMA11H3: No course found for HUMA11H3 at https://utsc.calendar.utoronto.ca/course/huma11h3
-Could not fetch info for HUMA17H3: No course found for HUMA17H3 at https://utsc.calendar.utoronto.ca/course/huma17h3
-Could not fetch info for GGRB06H3: No course found for GGRB06H3 at https://utsc.calendar.utoronto.ca/course/ggrb06h3
-Could not fetch info for ACMA01H3: No course found for ACMA01H3 at https://utsc.calendar.utoronto.ca/course/acma01h3
-Could not fetch info for ENGB51H3: No course found for ENGB51H3 at https://utsc.calendar.utoronto.ca/course/engb51h3
-CSCC43H3 does not appear to be offered in session S; deferring to a later semester.
-Completed
-CSCA08H3
-MATA31H3
-MATA22H3
-ENGA10H3
-PHLA10H3
-CSCA48H3
-CSCA67H3
-MATA37H3
-LINA01H3
-MGTA01H3
-CSCB07H3
-STAB52H3
-MADA01H3
-ANTA01H3
-HLTA02H3
-In Progress
-CSCB09H3
-CSCB36H3
-CSCB58H3
-CSCB63H3
-MATB24H3
-COPB50H3
-EESA01H3
+SPECIALIST (CO-OPERATIVE) PROGRAM IN COMPUTER SCIENCE - Software Engineering Stream (SCIENCE) + MINOR PROGRAM IN STATISTICS (SCIENCE)
 Future
-Semester 5 — Winter
-CSCC69H3 (0.5 credit)
-CSCC69H3: Operating Systems
+Semester 1 — Fall
+CSCA08H3 (0.5 credit)
+Introduction to Computer Science I
+LEC LEC01
+CSCA67H3 (0.5 credit)
+Discrete Mathematics
 LEC LEC01
 TUT TUT0001
-CSCC73H3 (0.5 credit)
-CSCC73H3: Algorithm Design and Analysis
+MATA31H3 (0.5 credit)
+Calculus I for Mathematical Sciences
+LEC LEC01
+TUT TUT0001
+COPB50H3 (0 credit)
+Foundations for Success in Arts and Science Co-op
+LEC LEC01
+PRA PRA0003
+CSCA20H3 (0.5 credit)
+Introduction to Programming
+Breadth requirement — swap freely
+LEC LEC01
+TUT TUT0001
+MATA30H3 (0.5 credit)
+Calculus I for Physical Sciences
+Matches your interest — swap freely
 LEC LEC01
 TUT TUT0002
-CSCD03H3 (0.5 credit)
-CSCD03H3: Social Impact of Information Technology
-LEC LEC01
-TUT TUT0003
-CSCC24H3 (0.5 credit)
-CSCC24H3: Principles of Programming Languages
-LEC LEC01
-TUT TUT0001
-CTLA01H3 (0.5 credit)
-CTLA01H3: Foundations in Effective Academic Communication
+Semester 2 — Winter
+CSCA48H3 (0.5 credit)
+Introduction to Computer Science II
+MATA22H3 (0.5 credit)
+Linear Algebra I for Mathematical Sciences
+MATA37H3 (0.5 credit)
+Calculus II for Mathematical Sciences
+COPB56H3 (0 credit)
+Becoming Job Search Ready: CMS Co-op
+MATA23H3 (0.5 credit)
+Linear Algebra I
+COPB54H3 (0 credit)
+Becoming Job Search Ready: Science Co-op
+MATA36H3 (0.5 credit)
+Calculus II for Physical Sciences
 Matches your interest — swap freely
-LEC LEC01
-PRA PRA0001
-Semester 6 — Fall
-CSCC43H3 (0.5 credit)
-CSCC43H3: Introduction to Databases
-CSCC37H3 (0.5 credit)
-CSCC37H3: Introduction to Numerical Algorithms for Computational Mathematics
-CSCC63H3 (0.5 credit)
-CSCC63H3: Computability and Computational Complexity
-MATB41H3 (0.5 credit)
-MATB41H3: Techniques of the Calculus of Several Variables I
-CSCC01H3 (0.5 credit)
-CSCC01H3: Introduction to Software Engineering
-Elective choice — swap freely
-Semester 7 — Winter
-CSCD37H3 (0.5 credit)
-CSCD37H3: Analysis of Numerical Algorithms for Computational Mathematics
-MATC32H3 (0.5 credit)
-MATC32H3: Graph Theory and Algorithms for its Applications
-Elective choice — swap freely
-CSC488H1 (0.5 credit)
-CSC488H1: Compilers and Interpreters
-Breadth requirement — swap freely
-PHLA10H3 (0.5 credit)
-PHLA10H3: Reason and Truth
+Semester 3 — Summer (break)
+Skipped by default — check "Take courses in summer semesters" in Preferences to plan courses here instead.
+
+Semester 4 — Fall
+COPB57H3 (0 credit)
+Finding Your First Work Term and Getting Workplace Ready: CMS Co-op
+COPB55H3 (0 credit)
+Finding Your First Work Term and Getting Workplace Ready: Science Co-op
+STAB52H3 (0.5 credit)
+An Introduction to Probability
+STAB53H3 (0.5 credit)
+Introduction to Applied Probability
 Matches your interest — swap freely
-PHLA11H3 (0.5 credit)
-PHLA11H3: Introduction to Ethics
-Matches your interest — swap freely
-Semester 8 — Fall
-LINA01H3 (0.5 credit)
-LINA01H3: Introduction to Linguistics
-Matches your interest — swap freely
-ENGA10H3 (0.5 credit)
-ENGA10H3: Literature and Film for Our Time: Visions and Revisions
-Matches your interest — swap freely
-ENGA11H3 (0.5 credit)
-ENGA11H3: Literature and Film for Our Time: Dawn of the Digital
-Matches your interest — swap freely
-ANTA01H3 (0.5 credit)
-ANTA01H3: Introduction to Anthropology: Becoming Human
-Matches your interest — swap freely
+FREE-ELECTIVE-1 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-2 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-3 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+Semester 5 — Work Term
+COPC98H3 (0 credit)
+Integrating Your Work Term Experience Part I
+COPC01H3 (0 credit)
+Arts and Science Co-op Work Term 1
+STAB57H3 (0.5 credit)
+An Introduction to Statistics
+Semester 6 — Summer (break)
+Skipped by default — check "Take courses in summer semesters" in Preferences to plan courses here instead.
+
+Semester 7 — Work Term
+COPC99H3 (0 credit)
+Integrating Your Work Term Experience Part II
+COPC02H3 (0 credit)
+Arts and Science Co-op Work Term 2
+STAC67H3 (0.5 credit)
+Regression Analysis
+Semester 8 — Work Term
+COPC03H3 (0 credit)
+Arts and Science Co-op Work Term 3
+Semester 9 — Summer (break)
+Skipped by default — check "Take courses in summer semesters" in Preferences to plan courses here instead.
+
+Semester 10 — Fall
+FREE-ELECTIVE-4 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-5 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-6 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-7 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-8 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+Semester 11 — Winter
+FREE-ELECTIVE-9 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-10 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-11 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-12 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-13 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+Semester 12 — Summer (break)
+Skipped by default — check "Take courses in summer semesters" in Preferences to plan courses here instead.
+
+Semester 13 — Fall
+FREE-ELECTIVE-14 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-15 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-16 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-17 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-18 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+Semester 14 — Winter
+FREE-ELECTIVE-19 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-20 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-21 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-22 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-23 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+Semester 15 — Summer (break)
+Skipped by default — check "Take courses in summer semesters" in Preferences to plan courses here instead.
+
+Semester 16 — Fall
+FREE-ELECTIVE-24 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-25 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+FREE-ELECTIVE-26 (0.5 credit)
+Free elective (unspecified) — any course of your choice
+Open elective — pick anything
+Semester 17 — Winter
+No courses placed this semester.
+
+Elective choices remaining
+Third and Fourth Year: C- or D-level STA course elective: choose 1 more from STAC32H3, STAD29H3, STAC53H3

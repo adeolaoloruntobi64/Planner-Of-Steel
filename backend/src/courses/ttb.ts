@@ -15,7 +15,12 @@ export interface CourseSection {
   instructor?: string;
 }
 
-export type Session = 'F' | 'S' | 'Y';
+// 'SU' (Summer) is a planner-side concept only — it's never returned by getCourseOfferings
+// itself, since UofT's live timetable only ever labels real sections F (Fall), S (Winter), or Y
+// (full-year). Summer timetables also publish much later in the year than Fall/Winter, so a
+// planned summer term is treated as provisional rather than live-checked the way semester 0
+// normally is — see buildPlanForCourses.
+export type Session = 'F' | 'S' | 'Y' | 'SU';
 
 export interface TermOffering {
   session: Session;

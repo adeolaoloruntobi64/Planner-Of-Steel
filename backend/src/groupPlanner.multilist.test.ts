@@ -176,4 +176,18 @@ test('buildGroupPlan does not get permanently stuck when a student is missing a 
     priyaCodes.some((c) => /^COPB5[0-9]H3$/.test(c)),
     `expected at least one co-op prep course to be scheduled for Priya despite having no TTB offerings, got: ${priyaCodes.join(', ')}`
   );
+
+  // Regression: the same course used to show up as a near-duplicate "shared suggestion" once
+  // for the full trio and again for each pair within it (up to 5x for one course), and titles
+  // were doubled with the code (e.g. "CSCB07H3: CSCB07H3: Software Design") because the scraped
+  // title already embeds the code. Neither should happen: each course should appear at most
+  // once (under its widest-covering friend group), and titles should never repeat the code.
+  const codeCounts = new Map<string, number>();
+  for (const s of groupPlan.sharedSuggestions) {
+    codeCounts.set(s.code, (codeCounts.get(s.code) ?? 0) + 1);
+    assert.ok(!s.title.toUpperCase().startsWith(s.code.toUpperCase()), `expected the title not to repeat the course code, got: "${s.code}: ${s.title}"`);
+  }
+  for (const [code, count] of codeCounts) {
+    assert.equal(count, 1, `expected ${code} to appear at most once in sharedSuggestions, got ${count}`);
+  }
 });

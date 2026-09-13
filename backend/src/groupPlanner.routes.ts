@@ -29,10 +29,11 @@ function isFriendInput(value: unknown): value is FriendInput {
 const router = Router();
 
 router.post('/', async (req, res) => {
-  const { friends, constraintsPrompt, semesters } = req.body as {
+  const { friends, constraintsPrompt, semesters, includeSummers } = req.body as {
     friends?: unknown[];
     constraintsPrompt?: string;
     semesters?: number;
+    includeSummers?: boolean;
   };
 
   if (!Array.isArray(friends) || friends.length < 2 || !friends.every(isFriendInput)) {
@@ -47,6 +48,7 @@ router.post('/', async (req, res) => {
       friends,
       ...(constraintsPrompt !== undefined && { constraintsPrompt }),
       ...(semesters !== undefined && { semesters }),
+      ...(includeSummers !== undefined && { includeSummers }),
     });
     res.json(plan);
   } catch (err) {
