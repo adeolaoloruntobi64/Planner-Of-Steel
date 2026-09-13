@@ -1,0 +1,213 @@
+.degree-planner-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+fieldset {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 1rem 1.25rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+legend {
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.program-picker {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.program-picker label:last-of-type {
+  grid-column: 1 / -1;
+}
+
+.selected-program-name {
+  grid-column: 1 / -1;
+  font-size: 0.9rem;
+  margin: -0.5rem 0 0.5rem;
+  color: #1d3a8f;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+label.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+select,
+input[type='number'],
+textarea {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #cbd2d9;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type='submit'] {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: #1d3a8f;
+  color: white;
+  cursor: pointer;
+}
+
+button[type='submit']:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #b42318;
+}
+
+.completed-summary {
+  font-size: 0.9rem;
+  color: #475467;
+}
+
+.semesters {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.semester-card {
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.courses {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.course {
+  border-left: 3px solid #1d3a8f;
+  padding-left: 0.75rem;
+}
+
+.course-title {
+  color: #475467;
+  font-size: 0.9rem;
+}
+
+.sections {
+  list-style: none;
+  padding: 0;
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: #475467;
+}
+
+.sections li.conflict {
+  color: #b42318;
+}
+
+.warnings {
+  background: #fffaeb;
+  border: 1px solid #fedf89;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+}
+
+.still-needed {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #475467;
+  margin: 0 0 0.75rem;
+}
+
+.program-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.program-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f4f7;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.program-list .remove {
+  background: none;
+  border: none;
+  color: #b42318;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+}
+
+fieldset button[type='button'] {
+  font: inherit;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #1d3a8f;
+  background: white;
+  color: #1d3a8f;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+fieldset button[type='button']:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.type-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  background: #1d3a8f;
+  color: white;
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  margin-right: 0.5rem;
+}
+
+.combo-status {
+  font-size: 0.85rem;
+  color: #b42318;
+  margin: 0 0 0.75rem;
+}
+
+.combo-status.valid {
+  color: #067647;
+}

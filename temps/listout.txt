@@ -1,0 +1,70 @@
+Recognized as completed: CSCA08H3, MATA31H3, MATA22H3, ENGA10H3, PHLA10H3, CSCA48H3, CSCA67H3, MATA37H3, LINA01H3, MGTA01H3, CSCB07H3, STAB52H3, MADA01H3, ANTA01H3, HLTA02H3
+
+SPECIALIST PROGRAM IN COMPUTER SCIENCE - Comprehensive Stream (SCIENCE)
+Dropped "CSC438H" from SCSPE0510 elective group "Electives from courses related to the theory of computing": doesn't look like a real UofT course code
+Dropped "CSC448H" from SCSPE0510 elective group "Electives from courses related to the theory of computing": doesn't look like a real UofT course code
+Dropped "CSC465H" from SCSPE0510 elective group "Electives from courses related to the theory of computing": doesn't look like a real UofT course code
+Dropped "CSC" from SCSPE0510 elective group "CSC, MAT, or STA elective at C- or D-level": doesn't look like a real UofT course code
+Dropped "MAT" from SCSPE0510 elective group "CSC, MAT, or STA elective at C- or D-level": doesn't look like a real UofT course code
+Dropped "STA" from SCSPE0510 elective group "CSC, MAT, or STA elective at C- or D-level": doesn't look like a real UofT course code
+Could not fetch info for CTLA19H3: No course found for CTLA19H3 at https://utsc.calendar.utoronto.ca/course/ctla19h3
+Could not fetch info for HUMA01H3: No course found for HUMA01H3 at https://utsc.calendar.utoronto.ca/course/huma01h3
+Could not fetch info for HLTA01H3: No course found for HLTA01H3 at https://utsc.calendar.utoronto.ca/course/hlta01h3
+Could not fetch info for LGGA99H3: No course found for LGGA99H3 at https://utsc.calendar.utoronto.ca/course/lgga99h3
+Could not fetch info for HUMA17H3: No course found for HUMA17H3 at https://utsc.calendar.utoronto.ca/course/huma17h3
+Could not fetch info for ACMA01H3: No course found for ACMA01H3 at https://utsc.calendar.utoronto.ca/course/acma01h3
+Could not fetch info for ENGB51H3: No course found for ENGB51H3 at https://utsc.calendar.utoronto.ca/course/engb51h3
+Could not fetch info for GGRB06H3: No course found for GGRB06H3 at https://utsc.calendar.utoronto.ca/course/ggrb06h3
+Could not fetch info for HUMA11H3: No course found for HUMA11H3 at https://utsc.calendar.utoronto.ca/course/huma11h3
+CSCB09H3 does not appear to be offered in session F; deferring to a later semester.
+CSCB58H3 does not appear to be offered in session F; deferring to a later semester.
+CSCC69H3 does not appear to be offered in session F; deferring to a later semester.
+CSCC24H3 does not appear to be offered in session F; deferring to a later semester.
+Some sections in semester 1 conflict and no conflict-free combination was available; kept anyway since allowConflicts was not set to reshuffle further.
+Semester 1 — Fall
+CSCB36H3 (0.5 credit)
+CSCB36H3: Introduction to the Theory of Computation
+LEC LEC02
+TUT TUT0004
+MATB24H3 (0.5 credit)
+MATB24H3: Linear Algebra II
+LEC LEC01 conflicts with CSCB36H3 TUT0004
+TUT TUT0002
+CSCC73H3 (0.5 credit)
+CSCC73H3: Algorithm Design and Analysis
+LEC LEC01 conflicts with CSCB36H3 LEC02
+TUT TUT0002
+CSCD03H3 (0.5 credit)
+CSCD03H3: Social Impact of Information Technology
+LEC LEC01
+TUT TUT0001
+CSCC37H3 (0.5 credit)
+CSCC37H3: Introduction to Numerical Algorithms for Computational Mathematics
+LEC LEC01 conflicts with CSCD03H3 LEC01
+TUT TUT0003
+MATB41H3 (0.5 credit)
+MATB41H3: Techniques of the Calculus of Several Variables I
+LEC LEC02
+TUT TUT0001
+Semester 2 — Winter
+CSCB09H3 (0.5 credit)
+CSCB09H3: Software Tools and Systems Programming
+CSCB58H3 (0.5 credit)
+CSCB58H3: Computer Organization
+CSCB63H3 (0.5 credit)
+CSCB63H3: Design and Analysis of Data Structures
+CSCC69H3 (0.5 credit)
+CSCC69H3: Operating Systems
+CSCC24H3 (0.5 credit)
+CSCC24H3: Principles of Programming Languages
+CSCC63H3 (0.5 credit)
+CSCC63H3: Computability and Computational Complexity
+CSCD37H3 (0.5 credit)
+CSCD37H3: Analysis of Numerical Algorithms for Computational Mathematics
+CSCC01H3 (0.5 credit)
+CSCC01H3: Introduction to Software Engineering
+MATC09H3 (0.5 credit)
+MATC09H3: Introduction to Mathematical Logic
+Semester 3 — Fall
+CSCC43H3 (0.5 credit)
+CSCC43H3: Introduction to Databases
