@@ -1,6 +1,5 @@
 export type Campus = 'stgeorge' | 'utsc' | 'utm';
 export type Session = 'F' | 'S' | 'Y';
-export type TimePreference = 'morning' | 'afternoon' | 'evening' | 'none';
 
 export interface ProgramSection {
   name: string;
@@ -15,8 +14,16 @@ export interface ProgramSummary {
   sectionSlug: string;
 }
 
+export interface CourseOption {
+  code: string;
+  title: string;
+}
+
 export interface ParsedTranscript {
   completedCourses: string[];
+  inProgressCourses: string[];
+  semestersElapsed: number;
+  nextSession: 'F' | 'S';
   program: string;
   notes?: string;
 }
@@ -27,10 +34,13 @@ export interface PlacedCourseSection {
   conflictsWith: string[];
 }
 
+export type PlacementCategory = 'required' | 'elective' | 'breadth' | 'interest' | 'free-elective';
+
 export interface PlacedCourse {
   code: string;
   title: string;
   credit: number;
+  category: PlacementCategory;
   session?: Session;
   sections?: PlacedCourseSection[];
 }
@@ -38,6 +48,7 @@ export interface PlacedCourse {
 export interface SemesterPlan {
   index: number;
   session: Session;
+  type: 'academic' | 'work';
   courses: PlacedCourse[];
 }
 
@@ -50,6 +61,7 @@ export interface ElectiveGroupStatus {
 
 export interface DegreePlan {
   programs: string[];
+  history: { completed: string[]; inProgress: string[] };
   semesters: SemesterPlan[];
   stillNeeded: string[];
   electiveGroupsRemaining: ElectiveGroupStatus[];
@@ -76,11 +88,28 @@ export function getPrograms(campus: Campus, sectionSlug: string): Promise<Progra
   return api(`/programs/${campus}/sections/${encodeURIComponent(sectionSlug)}`);
 }
 
+export function getProgramCourses(campus: Campus, sectionSlug: string, programCode: string): Promise<CourseOption[]> {
+  return api(`/programs/${campus}/sections/${encodeURIComponent(sectionSlug)}/${encodeURIComponent(programCode)}/courses`);
+}
+
 export function parseTranscript(transcriptText: string, prompt?: string): Promise<ParsedTranscript> {
   return api('/degree-planner/transcript', {
     method: 'POST',
     body: JSON.stringify({ transcriptText, prompt }),
   });
+}
+
+export async function uploadTranscriptFile(file: File, prompt?: string): Promise<ParsedTranscript> {
+  const formData = new FormData();
+  formData.append('file', file);
+  if (prompt) formData.append('prompt', prompt);
+
+  const res = await fetch('/api/degree-planner/transcript/upload', { method: 'POST', body: formData });
+  const body = await res.json();
+  if (!res.ok) {
+    throw new Error(body.error ?? `Upload failed with ${res.status}`);
+  }
+  return body as ParsedTranscript;
 }
 
 export interface ProgramSelector {
@@ -91,15 +120,55 @@ export interface ProgramSelector {
 
 export interface BuildPlanInput {
   completedCourses: string[];
+  inProgressCourses?: string[];
   programs: ProgramSelector[];
   /** Omit to plan every remaining semester until the program(s) are complete. */
   semesters?: number;
-  timePreference?: TimePreference;
-  allowConflicts?: boolean;
+  semestersElapsed?: number;
+  startSession?: 'F' | 'S';
+  interests?: string;
 }
 
 export function buildPlan(input: BuildPlanInput): Promise<DegreePlan> {
   return api('/plan', {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
+}
+
+export interface FriendInput {
+  name: string;
+  completedCourses: string[];
+  inProgressCourses?: string[];
+  programs: ProgramSelector[];
+  semestersElapsed?: number;
+  startSession?: 'F' | 'S';
+  interests?: string;
+}
+
+export interface SharedSuggestion {
+  constraintType: 'take-together' | 'maximize-shared';
+  friendNames: string[];
+  code: string;
+  title: string;
+  friendSemesters: { name: string; semesterIndex: number }[];
+  note: string;
+}
+
+export interface GroupPlan {
+  friends: { name: string; plan: DegreePlan }[];
+  sharedSuggestions: SharedSuggestion[];
+  warnings: string[];
+}
+
+export interface BuildGroupPlanInput {
+  friends: FriendInput[];
+  constraintsPrompt?: string;
+  semesters?: number;
+}
+
+export function buildGroupPlan(input: BuildGroupPlanInput): Promise<GroupPlan> {
+  return api('/group-plan', {
     method: 'POST',
     body: JSON.stringify(input),
   });

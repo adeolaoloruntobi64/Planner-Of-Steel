@@ -56,6 +56,29 @@ test('chooseSections reports conflicts instead of avoiding them when none can be
   assert.equal(mat?.conflictsWith[0]?.courseCode, 'CSCA08H3');
 });
 
+test('chooseSections finds a conflict-free combination even when the greedy course-order would miss it', () => {
+  // CourseA's sections are authored with the conflicting option first and the safe option
+  // second — with no time preference both score identically, so a naive greedy pick (which
+  // processes CourseA before knowing about CourseB's fixed slot) would take the first-listed
+  // option and land on an avoidable conflict. A full search should find CourseA's OTHER
+  // section instead, since that combination has zero conflicts.
+  const courses: CourseSectionGroup[] = [
+    {
+      code: 'CSCA08H3',
+      sections: [
+        section('LEC02', 'LEC', 'Monday', '10:00 AM', '11:00 AM'), // conflicts with MATA30H3's only section
+        section('LEC01', 'LEC', 'Monday', '9:00 AM', '10:00 AM'), // conflict-free alternative
+      ],
+    },
+    { code: 'MATA30H3', sections: [section('LEC01', 'LEC', 'Monday', '10:00 AM', '11:00 AM')] },
+  ];
+
+  const result = chooseSections(courses);
+  assert.equal(result.hasUnresolvedConflicts, false);
+  const csc = result.chosen.find((c) => c.courseCode === 'CSCA08H3');
+  assert.equal(csc?.section.code, 'LEC01');
+});
+
 test('chooseSections with a morning preference picks the earliest non-conflicting option', () => {
   const courses: CourseSectionGroup[] = [
     {

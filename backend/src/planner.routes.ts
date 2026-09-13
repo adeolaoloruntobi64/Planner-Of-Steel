@@ -1,11 +1,9 @@
 import { Router } from 'express';
 import { buildPlan, type ProgramSelector } from './planner';
-import type { TimePreference } from './courses/sections';
+import type { Session } from './courses/ttb';
 import type { Campus } from './courses/calendar';
 import { getPrograms } from './programs/cache';
 import { classifyProgramType, isValidCombo } from './programs/combos';
-
-const VALID_TIME_PREFERENCES: TimePreference[] = ['morning', 'afternoon', 'evening', 'none'];
 
 function isCampus(value: unknown): value is Campus {
   return value === 'stgeorge' || value === 'utsc' || value === 'utm';
@@ -20,12 +18,14 @@ function isProgramSelector(value: unknown): value is ProgramSelector {
 const router = Router();
 
 router.post('/', async (req, res) => {
-  const { completedCourses, programs, semesters, timePreference, allowConflicts } = req.body as {
+  const { completedCourses, inProgressCourses, programs, semesters, semestersElapsed, startSession, interests } = req.body as {
     completedCourses?: string[];
+    inProgressCourses?: string[];
     programs?: unknown[];
     semesters?: number;
-    timePreference?: string;
-    allowConflicts?: boolean;
+    semestersElapsed?: number;
+    startSession?: Session;
+    interests?: string;
   };
 
   if (!Array.isArray(completedCourses) || !Array.isArray(programs) || programs.length === 0 || !programs.every(isProgramSelector)) {
@@ -34,8 +34,8 @@ router.post('/', async (req, res) => {
     });
     return;
   }
-  if (timePreference !== undefined && !VALID_TIME_PREFERENCES.includes(timePreference as TimePreference)) {
-    res.status(400).json({ error: `timePreference must be one of ${VALID_TIME_PREFERENCES.join(', ')}` });
+  if (startSession !== undefined && startSession !== 'F' && startSession !== 'S') {
+    res.status(400).json({ error: 'startSession must be "F" or "S"' });
     return;
   }
 
@@ -64,9 +64,11 @@ router.post('/', async (req, res) => {
     const plan = await buildPlan({
       completedCourses,
       programs,
+      ...(inProgressCourses !== undefined && { inProgressCourses }),
       ...(semesters !== undefined && { semesters }),
-      ...(timePreference !== undefined && { timePreference: timePreference as TimePreference }),
-      ...(allowConflicts !== undefined && { allowConflicts }),
+      ...(semestersElapsed !== undefined && { semestersElapsed }),
+      ...(startSession !== undefined && { startSession }),
+      ...(interests !== undefined && { interests }),
     });
     res.json(plan);
   } catch (err) {

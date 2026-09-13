@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import degreePlannerRouter from './routes';
 import coursesRouter from './courses/routes';
 import plannerRouter from './planner.routes';
+import groupPlannerRouter from './groupPlanner.routes';
 import programsRouter from './programs/routes';
 import debugRouter from './debug/routes';
 import { closeSteelPool } from './courses/steelPool';
@@ -21,6 +22,7 @@ app.get('/api/health', (_req, res) => {
 app.use('/api/degree-planner', degreePlannerRouter);
 app.use('/api/courses', coursesRouter);
 app.use('/api/plan', plannerRouter);
+app.use('/api/group-plan', groupPlannerRouter);
 app.use('/api/programs', programsRouter);
 app.use('/api/debug', debugRouter);
 
